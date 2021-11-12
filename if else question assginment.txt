@@ -1,0 +1,441 @@
+QUES 
+#include<stdio.h>
+int main()
+{
+    int a,b ;
+   printf("enter the value of a");
+   scanf("%d",&a);
+   printf("enter the value of b");
+   scanf("%d",&b);
+   if(a>b)
+   {
+    printf("a is greater ");   
+   }
+   else
+{
+       printf("b is greater");
+   }
+   return 0;
+}
+
+QUES 
+#include<stdio.h>
+int main()
+{
+    int a,b,c,k ;
+    printf("enter the three number");
+    scanf("%d %d %d",&a,&b,&c );
+    if(a>b && a>c)
+    k=a;   
+    if(b>c && b>a)
+    k=b;
+    if(c>a && c>b)
+    k=b;   
+  printf("greater nunmber is %d",k); 
+}
+QUES 
+#include<stdio.h>
+int main()
+{
+    int a,b ;
+   printf("enter the value of a");
+   scanf("%d",&a);
+   printf("enter the value of b");
+   scanf("%d",&b);
+   if(a>b)
+   {
+    printf("a is greater ");   
+   }
+   else
+   {
+       printf("b is greater");
+   }
+   return 0;
+}
+QUES 
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("enter the number");
+    scanf("%d",&a);
+    if(0==a%2)
+    {
+        printf("no is even");
+    }
+    else
+   {
+       printf("no is odd");
+   }   
+}
+QUES 
+#include<stdio.h>
+int main()
+
+{
+    int a;
+printf("enter the number");
+scanf("%d",&a);
+if(0==a%5)
+    {
+        printf("divsible by 5 ");
+    }
+    
+   if(0==a%11)
+   {
+       printf("divisble by 11");
+    }
+    else
+    {
+        printf("not divsible");
+    }
+}
+QUES 
+#include<stdio.h>
+int main()
+
+{
+    int a;
+printf("enter the number");
+scanf("%d",&a);
+if(0==a%4)
+    {
+        printf("leap year ");
+    }
+    else
+    {
+        printf("not a leap year");
+    }
+}
+QUES 
+#include<stdio.h>
+int main()
+
+{
+    int a;
+printf("enter the number");
+scanf("%d",&a);
+if((a>='a' && a<='z')||('a'>='A' && a<= 'Z'))
+    {
+        printf(" not a alphabet ");
+    }
+    else
+    {
+        printf(" alphabet");
+    }
+}
+QUES 
+#include<stdio.h>
+int main()
+
+{
+    char ch;
+    int uppercase  ;
+    int lowercase;
+printf("enter the alphabet");
+scanf("%c",&ch);
+ uppercase=(ch =='A'|| ch =='E'|| ch =='I'|| ch == 'O'|| ch == 'U');
+  lowercase=(ch =='a'|| ch =='e'|| ch =='i'|| ch == 'o'|| ch == 'u');
+  if(uppercase || lowercase)
+
+    printf(" %c is a vowles",ch);
+
+else 
+
+    printf(" %c is a constants",ch);
+
+}
+QUES 
+#include<stdio.h>
+int main()
+{
+    char a;
+    
+    printf("enter a");
+    scanf("%c",&a);
+    if(a>='a' && a<='z')
+    {
+        printf("lowewrase");
+    }
+    else
+    {
+    if(a>='A' && a<='Z')
+    printf("uppercase");
+    
+    else 
+    printf("invalid character");
+    }
+}
+QUES 11
+#include <stdio.h>
+ 
+int main() 
+{
+    char *(a[7])={"monday","tuesday","wednesday","thursday","friday","saturday","sunday"},m; 
+    printf("Enter the week day:");
+ 
+    scanf("%d",&m);
+    if(m>7 || m<1)
+    {
+    	printf("invalid input");
+    }
+    else
+    printf("%s",a[m-1]);
+}
+QUES 12
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("\n enter the month");
+    scanf("\n %d",&n);
+    if(n=1)
+    {
+        printf("\n jan=31");
+    }
+    else if(n==2)
+    {
+        printf("\n feb=28");
+    }
+    else if(n==3)
+    {
+        printf("\n march=31");
+    }
+    else if(n==4)
+    {
+        printf("\n april=30");
+    }
+    else if(n==5)
+    {
+        printf("\n may=31");
+    }
+    else if(n==6)
+    {
+        printf("\n june=30");
+    }
+    else if(n==7)
+    {
+        printf("\n july=31");
+    }
+    else if(n==8)
+    {
+        printf("august=31");
+    }
+    else if(n==9)
+    {
+        printf("\n september=30");
+    }
+    else if(n==10)
+    {
+        printf("\n october=31");
+    }
+    else if(n==11)
+    {
+        printf("\n november=30");
+    }
+    else if(n==12)
+    {
+        printf("\n december=31");
+    }
+}
+QUES 
+#include<stdio.h>
+int main()
+{
+    int amt;
+    printf("enter the amount");
+    scanf("%d",&amt);
+  printf("\n 2000 X %d",amt/2000);
+  amt=amt%2000;
+  printf("\n 500 X %d",amt/500);
+  amt=amt%500;
+  printf("\n 500 X %d",amt/500);
+  amt=amt%500;
+  printf("\n 200 X %d",amt/200);
+  amt=amt%200;
+  printf("\n 100 X %d",amt/100);
+  amt=amt%100;
+  printf("\n 50 X %d",amt/50);
+  amt=amt%50;
+  printf("\n 20 X %d",amt/20);
+  amt=amt%20;
+   printf("\n 10 X %d",amt/10);
+  amt=amt%10;  
+}
+QUE 13
+-----
+QUES 
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("enter the side of a triangle");
+    scanf("%d",&a);
+    if(a+b+c>=180)
+    {
+    printf("triangle");
+    }
+    else 
+    {
+        printf("not a trinagle");
+    }
+}
+QUES 
+ #include<stdio.h>
+int main(){
+   int side1, side2, side3;
+   printf("Enter sides of triangle:");
+   scanf("%d%d%d",&side1,&side2,&side3);
+   if(side1 == side2 && side2 == side3)
+      printf(" Triangle is equilateral\n");
+   else if(side1 == side2 || side2 == side3 || side3 == side1)
+      printf(" Triangle is isosceles\n");
+   else
+      printf(" Triangle is scalene\n");
+   return 0;
+}
+QUES
+#include<stdio.h>
+int main()
+{
+    int a,b,c,D;
+    printf("enter the cofficent of x^2 ,x is a constant term");
+    scanf("%d %d %d",&a,&b,&c);
+    D=b*b-4*a*c;
+    if(D<0)
+    printf("both roots are imaginary");
+    if(D==0)
+    {
+    printf("both roots are equal");
+    x = -b / (2.0*a);
+    printf("root is %f",x);
+    
+    }
+    if(D>0)
+    {
+        printf("roots are real and distinct");
+        x=(-b + sqrt(D))/(2*a);
+        y=(-b-sqrt(D))/(2*a);
+        printf("\n roots are %f,%f",x,y);   
+    }    
+}
+QUES #include<stdio.h>
+int main()
+{
+    int cp,sp;
+    printf("enter the coast price\n");
+    scanf("%d",&cp);
+    printf("enter the selling price of a product");
+    scanf("%d",&sp);
+    if(sp>cp)
+    {
+        printf("your profit is %d\n",(sp-cp));
+    }
+    else if(cp>sp)
+    {
+        printf("lose incurred is %d\n",(cp-sp));
+    }
+    else
+    {
+        printf("neither profit, not lose ");
+    }    
+}
+QUES 
+#include <stdio.h>
+
+int main()
+{
+    int phy, chem, bio, math, eng; 
+    float per;
+    printf("Enter five subjects marks: ");
+    scanf("%d%d%d%d%d", &phy, &chem, &bio, &math, &eng);
+    per = (phy + chem + bio + math + eng) / 5.0;
+    printf("Percentage = %.2f\n", per);
+    if(per >= 90)
+    {
+        printf("Grade A");
+    }
+    else if(per >= 80)
+    {
+        printf("Grade B");
+    }
+    else if(per >= 70)
+    {
+        printf("Grade C");
+    }
+    else if(per >= 60)
+    {
+        printf("Grade D");
+    }
+    else if(per >= 40)
+    {
+        printf("Grade E");
+    }
+    else
+    {
+        printf("Grade F");
+    }
+
+    return 0;
+}
+QUESS
+#include <stdio.h>
+
+int main()
+{
+    float basic, gross, da, hra;
+    printf("Enter basic salary of an employee: ");
+    scanf("%f", &basic);
+    if(basic <= 10000)
+    {
+        da  = basic * 0.8;
+        hra = basic * 0.2;
+    }
+    else if(basic <= 20000)
+    {
+        da  = basic * 0.9;
+        hra = basic * 0.25;
+    }
+    else
+    {
+        da  = basic * 0.95;
+        hra = basic * 0.3;
+    }
+    gross = basic + hra + da;
+
+    printf("GROSS SALARY OF EMPLOYEE = %.2f", gross);
+
+    return 0;
+}
+QUES
+#include <stdio.h>
+
+int main()
+{
+    int unit;
+    float amt, total_amt, sur_charge;
+    printf("Enter total units consumed: ");
+    scanf("%d", &unit);
+    if(unit <= 50)
+    {
+        amt = unit * 0.50;
+    }
+    else if(unit <= 150)
+    {
+        amt = 25 + ((unit-50) * 0.75);
+    }
+    else if(unit <= 250)
+    {
+        amt = 100 + ((unit-150) * 1.20);
+    }
+    else
+    {
+        amt = 220 + ((unit-250) * 1.50);
+    }
+    sur_charge = amt * 0.20;
+    total_amt  = amt + sur_charge;
+
+    printf("Electricity Bill = Rs. %.2f", total_amt);
+
+    return 0;
+}
